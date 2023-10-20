@@ -169,10 +169,13 @@ body {
   padding: 120px 0px;
 }
 
-.page-info-title {
-  display: none; 
+.page-info-title { 
   margin-bottom: 8px;
   
+}
+
+.visually-hiden{
+  display: none;
 }
 
 .page-info-item{
