@@ -32,7 +32,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  padding: 24px 0;
+  
 }
 /*HEADER*/
 .header {
@@ -60,6 +60,7 @@ body {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
   margin-right: 76px;
+  padding: 24px 0;
 }
 
 .logo-text {
@@ -114,6 +115,7 @@ body {
 .hero {
   background-color: var(--NAVY-BLUE);
   padding: 188px 0;
+  max-width: 496px;
 }
 
 .hero-container {
