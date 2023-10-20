@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -12,6 +21,7 @@ body {
   --SLATE: #434455;
   --CLOUD: #f4f4fd;
   --hover-link: #404bbf;
+  --CORNFLOWER: #e7e9fc;
 }
 
 .link {
@@ -20,11 +30,21 @@ body {
 
 .list {
   list-style: none;
+  display: flex;
 }
 /*HEADER*/
-header {
+.header {
   background-color: white;
   text-align: center;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--CORNFLOWER);
+}
+
+.container {
+  justify-content: center;
+  max-width: 1128px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logo {
@@ -37,10 +57,16 @@ header {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+  margin-right: 76px;
 }
 
 .logo-text {
   color: var(--NAVY-BLUE);
+}
+
+.header-list {
+  gap: 40px;
+  margin-right: 332px;
 }
 
 .header-link:hover,
@@ -77,10 +103,21 @@ header {
   letter-spacing: 0.32px;
 }
 
+.contacts-list {
+  gap: 40px;
+}
+
 /*SECTION 1*/
 
 .hero {
   background-color: var(--NAVY-BLUE);
+  padding: 188px 0;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero-text {
@@ -92,6 +129,8 @@ header {
   font-weight: 700;
   line-height: 1.07;
   letter-spacing: 1.12px;
+  width: 496px;
+  margin-bottom: 48px;
 }
 
 .hero-btn {
@@ -104,6 +143,9 @@ header {
   letter-spacing: 0.64px;
   background-color: var(--iris);
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: none;
 }
 
 .hero-btn:hover,
@@ -113,8 +155,17 @@ header {
 
 /*Section 2*/
 
+.page-info-list {
+  gap: 24px;
+}
+
 .page-info {
   background-color: var(--WHITE);
+  padding: 120px 0px;
+}
+
+.page-info-title {
+  display: none;
 }
 
 .page-info-item-title {
@@ -141,6 +192,7 @@ header {
 
 .wwd-info {
   background-color: var(--WHITE);
+  padding-bottom: 120px;
 }
 
 .wwd-info-title {
@@ -153,16 +205,19 @@ header {
   line-height: 1.11;
   letter-spacing: 0.72px;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .wwd-info-list {
   background-color: var(--WHITE);
+  gap: 24px;
 }
 
 /*Section 4*/
 
 .our-team {
   background-color: var(--CLOUD);
+  padding: 120px 0;
 }
 
 .our-team-title {
@@ -175,15 +230,24 @@ header {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .our-team-list {
-  flex-shrink: 0;
-  background-color: var(--WHITE);
+  gap: 24px;
+}
+
+.container-item {
+  padding: 32px 0;
 }
 
 .our-team-item {
   background-color: var(--WHITE);
+  width: calc((100% - 24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-item-title {
@@ -195,6 +259,7 @@ header {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.4px;
+  margin-bottom: 8px;
 }
 
 .our-team-item-dscr {
@@ -212,17 +277,12 @@ header {
 
 .footer {
   background-color: var(--NAVY-BLUE);
+  padding: 100px 0;
 }
 
 .footer-logo {
-  color: var(--IRIS, #4d5ae5);
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 1.17;
-  letter-spacing: 0.54px;
-  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: block;
 }
 
 .footer-logo-text {
@@ -237,6 +297,7 @@ header {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.32px;
+  width: 264px;
 }
 
 /*MAIN PORTFOLIO*/
@@ -249,12 +310,27 @@ header {
   color: var(--iris);
   background-color: var(--CLOUD);
   cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--CORNFLOWER, #e7e9fc);
+  background: var(--CLOUD, #f4f4fd);
+  align-items: center;
+  margin-top: 96px;
 }
 
 .filters-btn:hover,
 .filters-btn:focus {
   color: var(--WHITE);
   background-color: var(--hover-link);
+}
+.filters-list {
+  border-radius: 4px;
+  background: var(--OCEAN);
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+  margin-bottom: 72px;
 }
 
 /*MAIN CARDS*/
@@ -265,10 +341,33 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--NAVY-BLUE);
+  margin-bottom: 8px;
 }
 
 .cards-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--SLATE);
+}
+
+.cards-list {
+  gap: 48px 24px;
+  flex-wrap: wrap;
+  margin-bottom: 120px;
+}
+
+.cards-item {
+  width: calc((100% - 24px * 2) / 3);
+}
+
+.container-item {
+  padding: 32px 16px;
+  border: 1px solid var(--CORNFLOWER);
+  border-top: none;
+}
+
+/*PORTFOLIO SECTION*/
+
+.hide {
+  display: none;
 }
