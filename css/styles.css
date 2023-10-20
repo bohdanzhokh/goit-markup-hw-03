@@ -31,6 +31,8 @@ body {
 .list {
   list-style: none;
   display: flex;
+  align-items: center;
+  padding: 24px 0;
 }
 /*HEADER*/
 .header {
@@ -42,9 +44,9 @@ body {
 
 .container {
   justify-content: center;
-  max-width: 1128px;
-  width: 100%;
   margin: 0 auto;
+  width: 1158px; 
+  padding: 0 15px;
 }
 
 .logo {
