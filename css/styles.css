@@ -175,7 +175,7 @@ body {
 }
 
 .visually-hiden{
-  display: none;
+
 }
 
 .page-info-item{
@@ -296,7 +296,7 @@ body {
 
 .footer-logo {
   margin-bottom: 16px;
-  display: block;
+  display: inline-block;
 }
 
 .footer-logo-text {
@@ -336,6 +336,7 @@ body {
 .filters-btn:focus {
   color: var(--WHITE);
   background-color: var(--hover-link);
+  border: 1px solid transparent;
 }
 .filters-list {
   border-radius: 4px;
