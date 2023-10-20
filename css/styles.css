@@ -32,7 +32,6 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-  
 }
 /*HEADER*/
 .header {
@@ -45,7 +44,7 @@ body {
 .container {
   justify-content: center;
   margin: 0 auto;
-  width: 1158px; 
+  width: 1158px;
   padding: 0 15px;
 }
 
@@ -115,7 +114,6 @@ body {
 .hero {
   background-color: var(--NAVY-BLUE);
   padding: 188px 0;
-  
 }
 
 .hero-container {
@@ -150,7 +148,7 @@ body {
   padding: 16px 32px;
   border-radius: 4px;
   border: none;
-  min-width: 169px
+  min-width: 169px;
 }
 
 .hero-btn:hover,
@@ -169,16 +167,14 @@ body {
   padding: 120px 0px;
 }
 
-.page-info-title { 
+.page-info-title {
   margin-bottom: 8px;
-  
 }
 
-.visually-hiden{
-
+.visually-hiden {
 }
 
-.page-info-item{
+.page-info-item {
   width: calc((100% - 72px) / 4);
 }
 
@@ -251,7 +247,7 @@ body {
   gap: 24px;
 }
 
-.container-item {
+.container {
   padding: 32px 0;
 }
 
@@ -385,4 +381,5 @@ body {
 
 .hide {
   display: none;
+  padding-top: 96px; padding-bottom: 120px;
 }
