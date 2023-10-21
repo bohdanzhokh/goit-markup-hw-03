@@ -33,6 +33,7 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+
 }
 
 /*HEADER*/
@@ -49,6 +50,7 @@ body {
   width: 1158px;
   padding: 0 15px;
   margin-bottom: 8px;
+
 }
 
 .logo {
@@ -242,6 +244,9 @@ body {
   gap: 24px;
 }
 
+.wwd-info-item{
+  width: calc((100% - 48px) / 3);
+}
 /*Section 4*/
 
 .our-team {
