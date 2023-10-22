@@ -49,11 +49,12 @@ body {
 }
 
 .container {
-  justify-content: center;
+  width: 100%;
+  max-width: 1158px;
   margin: 0 auto;
-  width: 1158px;
   padding: 0 15px;
-  }
+}
+
 
 .logo {
   color: var(--iris);
