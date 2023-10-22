@@ -48,10 +48,8 @@ body {
   justify-content: center;
   margin: 0 auto;
   width: 1158px;
-  margin-bottom: 8px;
-  padding: 32px 0;
-
-}
+  padding: 0 15px;
+  }
 
 .logo {
   color: var(--iris);
@@ -265,6 +263,7 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
+  
 }
 
 .our-team-list {
@@ -272,7 +271,7 @@ body {
 }
 
 .container {
-  padding: 32px 0;
+padding: 32px 0;
 }
 
 .our-team-item {
@@ -397,15 +396,15 @@ body {
 }
 
 .container-item {
-  padding: 32px 16px;
+  padding: 32px 0;
   border: 1px solid var(--CORNFLOWER);
   border-top: none;
 }
 
 /*PORTFOLIO SECTION*/
 
-.hide {
-  display: none;
-  padding-top: 96px;
-  padding-bottom: 120px;
+
+.mainsec{
+  padding-top: 96px; padding-bottom: 120px; 
+
 }
