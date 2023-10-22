@@ -272,9 +272,6 @@ body {
   gap: 24px;
 }
 
-.container {
-padding: 32px 0;
-}
 
 .our-team-item {
   background-color: var(--WHITE);
