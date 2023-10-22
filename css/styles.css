@@ -396,7 +396,7 @@ padding: 32px 0;
 }
 
 .container-item {
-  padding: 32px 0;
+  padding: 32px 16px;
   border: 1px solid var(--CORNFLOWER);
   border-top: none;
 }
