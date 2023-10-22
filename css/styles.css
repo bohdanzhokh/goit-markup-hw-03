@@ -44,6 +44,10 @@ body {
   border-bottom: 1px solid var(--CORNFLOWER);
 }
 
+.header-container{
+  padding: 0 15px;
+}
+
 .container {
   justify-content: center;
   margin: 0 auto;
@@ -401,6 +405,10 @@ padding: 32px 0;
   border-top: none;
 }
 
+
+.container-item-team{
+  padding: 32px 0;
+}
 /*PORTFOLIO SECTION*/
 
 
